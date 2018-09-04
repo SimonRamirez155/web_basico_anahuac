@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galerias en HTML</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/galeriaEje4.css">
+
+</head>
+<body>
+    <section class="galeria1">
+        <div id="container">
+            <h1>Galeria Lightbox</h1>
+
+            <figure>
+                <a href="imgs/thumb2open.jpg" data-lightbox="portafolio1" data-title="Trabajo sobre bitcoins">
+                    <img src="imgs/thumb2.png" alt="Trabajo sobre bitcoins">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="imgs/thumb1open.jpg" data-lightbox="portafolio1" data-title="Trabajo sobre bitcoins">
+                    <img src="imgs/thumb1.png" alt="Trabajo sobre bitcoins">
+                </a>
+            </figure>
+
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/bpgdec-0.9.4.js"></script>
+    </section>
+    <section class="galeria2">
+
+        <h1>Galeria Hover</h1>
+        
+        <figure class="image_3">
+            <img src="imgs/ad.bpg" width="200" height="100">
+        <figcaption>ANUNCIO</figcaption>
+        </figure>
+
+        <figure class="image_1" style="float:left">
+            <img src="imgs/jpegexample.jpg">
+            <figcaption>Mario 8bit</figcaption>
+        </figure>
+        <figure class="image_2" style="float:left">
+            <img src="imgs/pngexample.png">
+            <figcaption>Kirby 32bit</figcaption>
+        </figure>
+        <figure class="image_3" style="float:left">
+            <img src="imgs/gif2.gif">
+            <figcaption>Link 8bit</figcaption>
+        </figure>
+        <figure class="image_4" style="float:left">
+            <img src="imgs/gif3.gif">
+            <figcaption>Sonic 16bit</figcaption>
+        </figure>
+    </section>
+
+</body>
+</html>
