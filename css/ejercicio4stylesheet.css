@@ -1,0 +1,33 @@
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    grid-gap:5px;
+    grid-template-areas:  
+    "galeria1 galeria1 galeria1 . . . . ."
+    "galeria1 galeria1 galeria1 . . . . ."
+    "galeria1 galeria1 galeria1 . . . . ."
+    "galeria1 galeria1 galeria1 . . . . ."
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    ". . . . . galeria2 galeria2 galeria2"
+    
+
+} 
