@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS SHAPES</title>
+    <style>
+        #container{
+        display: grid;
+        grid-template-columns: repeat(autofit,minmax(450px, 1fr));
+        grid-gap: 1rem;
+        
+        }
+
+        #imagen1{
+        float: left;
+        shape-outside: circle(50%);
+        }
+
+        #imagen2{
+        float: left;
+        shape-outside: url(imgs/pngexample.png);
+        }
+
+        #imagen3{
+        float: right;
+        shape-outside: polygon(59.65% 81.1%, 39.5% 81.44%, 33.39% 89.95%, 59px 194px, 21.06% 75.14%, 11.06% 58.19%, 8.99% 37.44%, 82px 21px, 79.94% 13.85%, 83.91% 60.34%);
+        }
+
+        #imagen4{
+            clip-path: polygon(59.65% 81.1%, 39.5% 81.44%, 33.39% 89.95%, 59px 194px, 21.06% 75.14%, 11.06% 58.19%, 8.99% 37.44%, 82px 21px, 79.94% 13.85%, 83.91% 60.34%);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+            </ul>
+        </nav>
+        <section id="s1">
+            <h1>Shapes 1</h1>
+            <img src="imgs/jpegexample.jpg" width="300" id="imagen1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur odio assumenda animi, nulla illum accusamus a laborum dicta esse. Modi aliquid et similique molestias vero dicta alias iure illum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio veritatis quos illum aspernatur possimus, similique, ratione excepturi saepe libero quod autem incidunt molestias eveniet odit dolorum officiis perspiciatis. Ducimus?</p>
+
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam delectus sapiente, odit mollitia veritatis voluptate aperiam inventore, veniam consequatur nobis labore ab eius animi nisi quam reprehenderit accusamus excepturi ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit, voluptatem cumque laboriosam adipisci, natus ratione atque fugiat sint placeat a eligendi qui impedit temporibus, accusamus modi ex recusandae enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolor dolores in incidunt praesentium aliquid deleniti autem sint at voluptate doloremque. Quidem fugiat illo temporibus voluptatibus, beatae magnam! Aliquam, est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestias aut reprehenderit tenetur? Odio perspiciatis quas magnam, quo facilis esse omnis, inventore quibusdam quos ex quaerat tenetur, rem consequuntur. Nihil.</p>
+
+        </section>
+
+        <section id="s2">
+                <h1>Shapes 2</h1>
+                <img src="imgs/pngexample.png" width="300" id="imagen2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur odio assumenda animi, nulla illum accusamus a laborum dicta esse. Modi aliquid et similique molestias vero dicta alias iure illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio veritatis quos illum aspernatur possimus, similique, ratione excepturi saepe libero quod autem incidunt molestias eveniet odit dolorum officiis perspiciatis. Ducimus?</p>
+    
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam delectus sapiente, odit mollitia veritatis voluptate aperiam inventore, veniam consequatur nobis labore ab eius animi nisi quam reprehenderit accusamus excepturi ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit, voluptatem cumque laboriosam adipisci, natus ratione atque fugiat sint placeat a eligendi qui impedit temporibus, accusamus modi ex recusandae enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolor dolores in incidunt praesentium aliquid deleniti autem sint at voluptate doloremque. Quidem fugiat illo temporibus voluptatibus, beatae magnam! Aliquam, est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestias aut reprehenderit tenetur? Odio perspiciatis quas magnam, quo facilis esse omnis, inventore quibusdam quos ex quaerat tenetur, rem consequuntur. Nihil.</p>
+    
+            </section>
+
+            <section id="s3">
+                    <h1>Shapes 3</h1>
+                    <img src="imgs/svgexample.svg" width="300" id="imagen3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur odio assumenda animi, nulla illum accusamus a laborum dicta esse. Modi aliquid et similique molestias vero dicta alias iure illum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio veritatis quos illum aspernatur possimus, similique, ratione excepturi saepe libero quod autem incidunt molestias eveniet odit dolorum officiis perspiciatis. Ducimus?</p>
+        
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam delectus sapiente, odit mollitia veritatis voluptate aperiam inventore, veniam consequatur nobis labore ab eius animi nisi quam reprehenderit accusamus excepturi ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit, voluptatem cumque laboriosam adipisci, natus ratione atque fugiat sint placeat a eligendi qui impedit temporibus, accusamus modi ex recusandae enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolor dolores in incidunt praesentium aliquid deleniti autem sint at voluptate doloremque. Quidem fugiat illo temporibus voluptatibus, beatae magnam! Aliquam, est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestias aut reprehenderit tenetur? Odio perspiciatis quas magnam, quo facilis esse omnis, inventore quibusdam quos ex quaerat tenetur, rem consequuntur. Nihil.</p>
+        
+                </section>
+
+                <section id="s4">
+                        <h1>Shapes 4</h1>
+                        <img src="imgs/gif2.gif" width="200" id="imagen4">
+                </section>
+        
+
+
+    </div>
+</body>
+</html>
