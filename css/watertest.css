@@ -1,0 +1,40 @@
+body { margin: 0; }
+div {
+	position: fixed;
+	font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.a {
+	left: 0;
+	top: 0;
+	right: 51%;
+	bottom: 51%;
+	background-size: cover;
+}
+
+.b {
+	left: 51%;
+	top: 25.5%;
+	right: 0;
+	bottom: 25.5%;
+	background-attachment: fixed;
+}
+
+.c {
+	left: 0;
+	top: 51%;
+	right: 51%;
+	bottom: 0;
+	background-size: cover;
+}
+
+.error {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.8);
+	color: #eee;
+	padding: 20px;
+	display: none;
+}
