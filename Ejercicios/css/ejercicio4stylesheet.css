@@ -2,7 +2,7 @@
     box-sizing: inherit;
 }
 
-container{
+.container{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 300px);
