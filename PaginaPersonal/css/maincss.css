@@ -51,30 +51,43 @@ html{
 	linear-gradient(transparent 31px,#ffffff 32px, transparent 32px),
   linear-gradient(90deg, transparent 31px,#ffffff 32px, transparent 32px);
   background-size: 100% 52px, 52px 100%;
-
-  /* CSS GRID*/
-
-  display: grid;
-  grid-template-columns: repeat(5, 30%);
-  grid-template-rows: repeat(10, 20%);
-  grid-gap:15px;
-  grid-template-areas:  
-  "Logo Logo Logo . . . . ."
-  "Logo Logo Logo . . . . ."
-  ". . . . . . . ."
-  ". . . . . . . ."
-  ". . . . . . . ."
-  ". . . . . . . ."
  
 
 }
 
-/* Mi logo*/
-.logo{
-  padding: 15px;
+#contenedor1{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(7,150px);
+
+    
+  grid-template-areas:  
+  "bloque1 bloque1 bloque1 . ."
+  "bloque1 bloque1 bloque1 . ."
+  ". . . . ."
+  ". . . . ."
+  ". . . . ."
+  ". . . . ."
+  ". . . . ."
 }
 
-#Block1{
 
-  
+
+/* División para logo*/
+#bloque1{
+  grid-area: bloque1;
+}
+
+/* Logo*/
+#logo{
+  padding: 5%;
+  position: left;
+}
+
+/* División para bloque 2*/
+#bloque2{
+}
+
+#fondo{
+  background-color: #066bdf
 }
