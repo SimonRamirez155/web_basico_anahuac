@@ -37,9 +37,10 @@ html {
 
 /* Gradient del Fondo principal*/
 html{
-  width: 100%;
-  height: 100%;
+  
   background:linear-gradient(150deg,#ffffff 40%,#066bdf);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Cuadricula Blanca*/
@@ -58,36 +59,78 @@ html{
 #contenedor1{
   display: grid;
   grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(7,150px);
+  grid-template-rows: repeat(15,150px);
 
     
   grid-template-areas:  
-  "bloque1 bloque1 bloque1 . ."
-  "bloque1 bloque1 bloque1 . ."
+  "Logo Logo . . ."
+  "Intro Intro Intro Foto Foto"
+  "Intro Intro Intro Foto Foto"
+  ". . HeaderA HeaderA HeaderA"
+  "Porta Porta Porta Porta Porta"
+  "Porta Porta Porta Porta Porta"
+  "Porta Porta Porta Porta Porta"
+  "Porta Porta Porta Porta Porta"
+  "HeaderB HeaderB HeaderB . ."
+  "About About About About About"
+  "About About About About About"
+  "About About About About About"
   ". . . . ."
-  ". . . . ."
-  ". . . . ."
-  ". . . . ."
-  ". . . . ."
+  "Fin Fin Fin Fin Fin"
+  "Fin Fin Fin Fin Fin"
 }
 
 
 
-/* División para logo*/
+/* bloque de logo*/
 #bloque1{
-  grid-area: bloque1;
+  grid-area: Logo;
+  padding: 20px;
 }
 
-/* Logo*/
-#logo{
-  padding: 5%;
-  position: left;
-}
-
-/* División para bloque 2*/
+/*bloque introductorio*/
 #bloque2{
+  grid-area: Intro;
+  padding: 10px;
+  background-color:rgba(255, 255, 255, 0.7);
 }
 
-#fondo{
-  background-color: #066bdf
+.titulo{
+  font-family: 'bungee';
+  font-size: 40px;
+  padding-left: 10px;
+  padding-top: 11%;
+  color: #066bdf;
+}
+
+.paragIntro{
+  font-family: 'roboto';
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 25px;
+  color:rgb(68, 68, 68)
+}
+
+/*Bloque Foto*/
+#Foto{
+  grid-area: Foto;
+  background-color:rgba(255, 255, 255, 0.7);
+}
+
+/*Perspective Photo https://codepen.io/HugoGiraudel/pen/fvopl */
+
+.wrapper {
+  perspective: 1000px;
+}
+.wrapper:hover .inner {
+  transform: rotate(0);
+}
+.inner {
+  transition: .3s; 
+  transform: rotateY(-20deg);
+
+}.fotoimg {
+  height: auto;
+  max-width: 200%;
+
 }
