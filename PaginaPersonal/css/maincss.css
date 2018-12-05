@@ -66,12 +66,12 @@ html{
   "Logo Logo . . ."
   "Intro Intro Intro Foto Foto"
   "Intro Intro Intro Foto Foto"
-  ". . HeaderA HeaderA HeaderA"
+  ". . . HeaderA HeaderA"
   "Porta Porta Porta Porta Porta"
   "Porta Porta Porta Porta Porta"
   "Porta Porta Porta Porta Porta"
   "Porta Porta Porta Porta Porta"
-  "HeaderB HeaderB HeaderB . ."
+  "HeaderB HeaderB . . ."
   "About About About About About"
   "About About About About About"
   "About About About About About"
@@ -99,7 +99,7 @@ html{
   font-family: 'bungee';
   font-size: 40px;
   padding-left: 10px;
-  padding-top: 11%;
+  padding-top: 75px;
   color: #066bdf;
 }
 
@@ -115,22 +115,48 @@ html{
 #Foto{
   grid-area: Foto;
   background-color:rgba(255, 255, 255, 0.7);
+  padding: 10px;
 }
 
-/*Perspective Photo https://codepen.io/HugoGiraudel/pen/fvopl */
-
-.wrapper {
-  perspective: 1000px;
+/*Header Works*/
+#headerA{
+  grid-area: HeaderA;
+  right: 0px;
+  padding-right: 10px;
 }
-.wrapper:hover .inner {
-  transform: rotate(0);
-}
-.inner {
-  transition: .3s; 
-  transform: rotateY(-20deg);
 
-}.fotoimg {
-  height: auto;
-  max-width: 200%;
-
+/*Header About*/
+#headerB{
+  grid-area: HeaderB;
+  left: 0px;
+  padding-left: 10px;
 }
+
+
+/*Footer*/
+
+
+.footA{
+  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: right;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: 'roboto';
+  font-size: 12px;
+}
+
+.footB{
+  position: fixed;
+  left:0;
+  bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 12px;
+}
+
