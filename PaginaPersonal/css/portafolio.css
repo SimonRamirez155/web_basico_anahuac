@@ -209,3 +209,47 @@ html{
   font-size: 12px;
 }
 
+@media only screen and (max-width: 600px) {
+
+  #contenedor1{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(8,150px);
+  
+      
+    grid-template-areas:  
+    "Logo Logo Logo Logo Logo"
+    "HeaderA HeaderA HeaderA HeaderA . "
+    "Porta1 Porta1 Porta1 Porta2 Porta2"
+    "Porta3 Porta3 Porta4 Porta4 Porta4"
+    "Porta5 Porta5 Porta5 Porta6 Porta6"
+    "Porta7 Porta7 Porta8 Porta8 Porta8"
+    "Porta9 Porta9 Porta9 Porta10 Porta10"
+    "Porta11 Porta11 Porta12 Porta12 Porta12"
+    "PortaYT PortaYT PortaYT PortaH PortaH"
+    
+  }
+
+  #Home{
+    grid-area: PortaH;
+    color: #ffffff;
+    background-color: rgba(34, 149, 243, 0.699);
+    margin: 10px;
+    text-align: Center;
+    font-family: 'Bungee';
+    font-size:20px;
+    padding-top: 2px;
+  }
+  
+  #Youtube{
+    grid-area: PortaYT;
+    color: #ffffff;
+    background-color: rgba(233, 13, 13, 0.637);
+    margin: 10px;
+    text-align: Center;
+    font-family: 'Bungee';
+    font-size:20px;
+    padding-top:2px;
+
+}
+}

@@ -59,7 +59,7 @@ html{
 #contenedor1{
   display: grid;
   grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(13,150px);
+  grid-template-rows: repeat(12,150px);
 
     
   grid-template-areas:  
@@ -75,7 +75,6 @@ html{
   "AboutF AboutF AboutB AboutB AboutB"
   "AboutF AboutF AboutA AboutA AboutA"
   "AboutF AboutF AboutA AboutA AboutA"
-  "Fin Fin Fin Fin Fin"
 }
 
 /* bloque de logo*/
@@ -178,6 +177,7 @@ html{
   grid-area: AboutF;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: #000000;
 }
 
 #brevebio{
@@ -189,6 +189,7 @@ html{
 #apps{
   grid-area: AboutA;
   padding: 10px;
+  background-color: rgba(247, 213, 26, 0.637);
 }
 
 /*extra*/
@@ -226,5 +227,67 @@ html{
   padding-right: 15px;
   padding-left: 15px;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #contenedor1{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(10,150px);
+  
+      
+    grid-template-areas:  
+    "Logo Logo Logo Logo Logo"
+    "Intro Intro Intro Foto Foto"
+    "Intro Intro Intro Foto Foto"
+    ". HeaderA HeaderA HeaderA HeaderA"
+    "Porta1 Porta1 Porta1 Porta2 Porta2"
+    "Porta3 Porta3 Porta4 Porta4 Porta4"
+    "Porta5 Porta5 Porta5 Porta6 Porta6"
+    "HeaderB HeaderB HeaderB HeaderB ."
+    "AboutB AboutB AboutB AboutB AboutB"
+    "AboutF AboutF AboutA AboutA AboutA"
+  }
+
+  .titulo{
+    font-family: 'bungee';
+    font-size:20px;
+    padding-left: 10px;
+    padding-top: 70px;
+    color: #066bdf;
+  }
+
+  .paragIntro{
+    font-family: 'roboto';
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    color:rgb(68, 68, 68)
+  }
+  
+
+  #ExtendedPortafolio{
+    grid-area: Porta5;
+    color: #ffffff;
+    background-color: rgba(34, 149, 243, 0.699);
+    margin: 10px;
+    text-align: Center;
+    font-family: 'Bungee';
+    font-size:20px;
+    padding-top: 40px;
+  }
+  
+  #YoutubeButton{
+    grid-area: Porta6;
+    color: #ffffff;
+    background-color: rgba(233, 13, 13, 0.637);
+    margin: 10px;
+    text-align: Center;
+    font-family: 'Bungee';
+    font-size:20px;
+    padding-top: 40px;
+  }
+
 }
 
